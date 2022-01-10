@@ -38,7 +38,11 @@ Save image in project or in another location in your computer
     r.reshape(4,5)
 ######   convert to RGB
       r.reshape(2,3,3)
-      
+### READING/WRITING A VIDEO FILE
+###### reading frame
+      v=cv2.VideoCapture("")
+      fbs=v.get(cv2.CAP_PROP_FPS)
+   
     
     
     
