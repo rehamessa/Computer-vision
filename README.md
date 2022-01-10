@@ -81,7 +81,8 @@ The imread() function loads image from the specified file and returns it.
       sobelx = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
       sobely = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
       cv2.add(sobelx, sobely)
-######
+###### CANNY
+      cv2.Canny(img, 200, 300)
       
       
       
