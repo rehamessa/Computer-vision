@@ -29,7 +29,7 @@ The imread() function loads image from the specified file and returns it.
 ### DISPLAYING CAMERA FRAMES IN A WINDOW
     
     if event == cv.EVENT_LBUTTONUP:
-      clicked = True
+    
    
     
     
