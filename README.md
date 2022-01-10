@@ -70,3 +70,7 @@ The imread() function loads image from the specified file and returns it.
 ###### sharp filter
       filterkernel2 = np.array([[-1, -1, -1],[-1, 9, -1],[-1, -1, -1]])
       ndimage.convolve(img, kernel2)
+## EDGE DETECTION
+###   CUSTOM KERNEL
+    ndimagekernel_3x3 = np.array([[-1, -1, -1],[-1, 8, -1],[-1, -1, -1]])
+    ndimage.convolve(img, kernel_3x3)
