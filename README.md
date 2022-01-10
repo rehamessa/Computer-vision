@@ -26,24 +26,12 @@ The imread() function loads image from the specified file and returns it.
      #using imread for reducing size
      cv2.imread(image,cv2.IMREAD_REDUCED_COLOR_2)
      CV2.IMREAD(IMAGE,cv2.IMREAD_REDUCED_GRAYSCALE_8)
-### IMAGE WRITING
-Save image in project or in another location in your computer
-
-     cv2.imread('image')
-### CONVERTING BETWEEN AN IMAGE AND RAW BYTES
-    # making random ayyay
-    r=bytearray(os.urandom(230)
-    flatnumpy=numpy.array(r)
-###### convert array to grayscale
-    r.reshape(4,5)
-######   convert to RGB
-      r.reshape(2,3,3)
-### READING/WRITING A VIDEO FILE
-###### reading frame
-      v=cv2.VideoCapture("")
-      fbs=v.get(cv2.CAP_PROP_FPS)
+### DISPLAYING CAMERA FRAMES IN A WINDOW
+   def onmouse(event,x,y,flags,param):
+   global clicked
+   if event == cv.EVENT_LBUTTONUP:
+     clicked = True
    
-    
     
     
      
