@@ -13,5 +13,6 @@ An image is a multidimensional array; it has columns and rows of pixels, and eac
 
      #create a 3x3 square black image using a 2d Numpy array
      img= np.zeros((3,3),dtype=np.unit8)
+     
      #convert this image into RGB 
      cv2.cvtColor(img,cv2.COLOR_GRAY4BGR)
