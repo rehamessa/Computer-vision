@@ -37,6 +37,17 @@ The imread() function loads image from the specified file and returns it.
       
       cv2.cvtcolor(image,cv2.COLOR_BGR2RGB
    
-    
-    
-     
+###### split
+
+      B,G,R=cv2.split('image')
+###### split HSV
+      
+     hue=[:,:,0]
+     saturation=[:,:,1]
+     value=[:,:,2]
+###### 
+      half = cv2.resize(image, (0, 0), fx = 0.5, fy = 0.5)
+      bigger = cv2.resize(image, (1050, 1610))
+      stretch_near = cv2.resize(image, (780, 540),interpolation =           cv2.INTER_NEAREST)
+      
+      
