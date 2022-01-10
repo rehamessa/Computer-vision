@@ -63,4 +63,10 @@ The imread() function loads image from the specified file and returns it.
  ###### Bilateral
        
        cv2.bilateralFilter(image, 9, 75, 75)
-       
+### HIGH PASS FILTER
+###### smooth filter
+      filterkernel1 = np.array( [[0.04, 0.04, 0.04, 0.04, 0.04],[0.04, 0.04, 0.04, 0.04, 0.04],[0.04, 0.04, 0.04, 0.04, 0.04],[0.04, 0.04, 0.04, 0.04, 0.04],[0.04, 0.04, 0.04, 0.04, 0.04]])
+      cv2.filter2d(img, -1, kernel1)
+###### sharp filter
+      filterkernel2 = np.array([[-1, -1, -1],[-1, 9, -1],[-1, -1, -1]])
+      ndimage.convolve(img, kernel2)
