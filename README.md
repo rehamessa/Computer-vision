@@ -27,8 +27,7 @@ The imread() function loads image from the specified file and returns it.
      cv2.imread(image,cv2.IMREAD_REDUCED_COLOR_2)
      CV2.IMREAD(IMAGE,cv2.IMREAD_REDUCED_GRAYSCALE_8)
 ### DISPLAYING CAMERA FRAMES IN A WINDOW
-    def onmouse(event,x,y,flags,param):
-    global clicked
+    
     if event == cv.EVENT_LBUTTONUP:
       clicked = True
    
