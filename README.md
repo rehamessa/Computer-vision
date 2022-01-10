@@ -49,5 +49,17 @@ The imread() function loads image from the specified file and returns it.
       half = cv2.resize(image, (0, 0), fx = 0.5, fy = 0.5)
       bigger = cv2.resize(image, (1050, 1610))
       stretch_near = cv2.resize(image, (780, 540),interpolation==cv2.INTER_NEAREST)           
-      
-      
+ ##### BLURRING
+ ###### average
+ 
+        cv2.blur(image,(5,5))
+ ###### Gaussian     
+       
+        cv2.GaussianBlur(image, (7, 7), 0)
+ ###### Median Blur
+ 
+       cv2.medianBlur(image, 5)
+ ###### Bilateral
+       
+       cv2.bilateralFilter(image, 9, 75, 75)
+       
