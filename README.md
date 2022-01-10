@@ -30,7 +30,12 @@ The imread() function loads image from the specified file and returns it.
 Save image in project or in another location in your computer
 
      cv2.imread('image')
-   
+### CONVERTING BETWEEN AN IMAGE AND RAW BYTES
+    # making random ayyay
+    r=bytearray(os.urandom(230)
+    flatnumpy=numpy.array(r)
+convert array to grayscale
+    r.reshape(4,5)
     
     
      
