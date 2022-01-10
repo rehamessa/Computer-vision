@@ -22,7 +22,7 @@ The imread() function loads image from the specified file and returns it.
      cv2.imread("image')
      #reading image with grayscale mood
      cv2.imread("image",IMREAD_GRAYSCALE)
-
+-
      #using imread for reducing size
      cv2.imread(image,cv2.IMREAD_REDUCED_COLOR_2)
      CV2.IMREAD(IMAGE,cv2.IMREAD_REDUCED_GRAYSCALE_8)
