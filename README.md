@@ -71,6 +71,17 @@ The imread() function loads image from the specified file and returns it.
       filterkernel2 = np.array([[-1, -1, -1],[-1, 9, -1],[-1, -1, -1]])
       ndimage.convolve(img, kernel2)
 ## EDGE DETECTION
-###   CUSTOM KERNEL
+######   CUSTOM KERNEL
     ndimagekernel_3x3 = np.array([[-1, -1, -1],[-1, 8, -1],[-1, -1, -1]])
     ndimage.convolve(img, kernel_3x3)
+###   DERIVATIVES
+###### laplacian
+       cv2.Laplacian(img, cv2.CV_64F)
+###### sobel and scharr
+      sobelx = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=5)
+      sobely = cv2.Sobel(img, cv2.CV_64F, 0, 1, ksize=5)
+      cv2.add(sobelx, sobely)
+######
+      
+      
+      
