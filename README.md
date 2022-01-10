@@ -28,8 +28,14 @@ The imread() function loads image from the specified file and returns it.
      CV2.IMREAD(IMAGE,cv2.IMREAD_REDUCED_GRAYSCALE_8)
 ### DISPLAYING CAMERA FRAMES IN A WINDOW
     
-    if event == cv.EVENT_LBUTTONUP:
-    
+    if event == cv.EVENT_LBUTTONUP
+## Image Processing
+###### CONVERT FROM GRAY TO BINARY
+
+      cv2.threshold(grayimage,127,255,cv2.THRESH_BINARY)
+###### BGR TO RGB
+      
+      cv2.cvtcolor(image,cv2.COLOR_BGR2RGB
    
     
     
