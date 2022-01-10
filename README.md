@@ -26,7 +26,9 @@ The imread() function loads image from the specified file and returns it.
      #using imread for reducing size
      cv2.imread(image,cv2.IMREAD_REDUCED_COLOR_2)
      CV2.IMREAD(IMAGE,cv2.IMREAD_REDUCED_GRAYSCALE_8)
-     
+### IMAGE WRITING
+Save image in project or in another location in your computer
+    cv2.imread('image')
    
     
     
