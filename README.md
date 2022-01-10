@@ -34,8 +34,12 @@ Save image in project or in another location in your computer
     # making random ayyay
     r=bytearray(os.urandom(230)
     flatnumpy=numpy.array(r)
-##### convert array to grayscale
+###### convert array to grayscale
     r.reshape(4,5)
+######   convert to RGB
+      r.reshape(2,3,3)
+      
+    
     
     
      
