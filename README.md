@@ -83,6 +83,16 @@ The imread() function loads image from the specified file and returns it.
       cv2.add(sobelx, sobely)
 ###### CANNY
       cv2.Canny(img, 200, 300)
-      
-      
+## Contours
+
+can be explained as the curve joining all the continuous points along the boundary which are having the
+same color or intensity .
+#### Applications of Contours detection:
+shape Analysis
+object detection
+Object recognition
+###### 1
+For better accuracy , we use binary image for finding the contours so first we are going to generate the
+binary image
+      cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
       
