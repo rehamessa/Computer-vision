@@ -117,4 +117,19 @@ back to the code sample, note that the findContours function returns two element
 hierarchy. We use the contours to draw green outlines on the color version of the image
        
        contours , hierarchy = cv2. f indContours( thresh, cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
-
+## Detecting lines
+### HoughLines & HoughLinesP
+HoughLines
+returns a representation of each line as a single point and an angle, without information about endpoints.
+HoughLinesP
+returns the two endpoints of each detected line segment
+ ###### HoughLinesP
+ ###### 1
+ search for lines that are separated by as little as 1 pixel and 1 degree.
+       
+       rho=1 and theta=np.pi/180.0
+threshold
+represents line is discarded
+         
+         cv2.HoughLinesP(image,1,np.pi/180,20,minLineLength,maxLineGap)
+         
