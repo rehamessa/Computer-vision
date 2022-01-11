@@ -166,8 +166,8 @@ represents line is discarded
 - color
 - thicknes
 
-     cv2.circle(img, center, radius, color, thickness)
-     cv2.circle(img,(0,0), (255,255), (255,255,0), 3)
+      cv2.circle(img, center, radius, color, thickness)
+      cv2.circle(img,(0,0), (255,255), (255,255,0), 3)
  #### ellipse geometric
 -center
 -axes is the half of  the size of the ellipse main axes
@@ -176,5 +176,5 @@ represents line is discarded
 - color
 - thickness
 
-     cv2.ellipse(img, center,axes, angle, startAngle, endAngle, color, thickness)
+      cv2.ellipse(img, center,axes, angle, startAngle, endAngle, color, thickness)
                    
