@@ -94,5 +94,6 @@ Object recognition
 ###### 1
 For better accuracy , we use binary image for finding the contours so first we are going to generate the
 binary image
+
       cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
       
