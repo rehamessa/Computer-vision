@@ -133,3 +133,12 @@ represents line is discarded
          
          cv2.HoughLinesP(image,1,np.pi/180,20,minLineLength,maxLineGap)
          
+ ## Detecting Circles
+ ### HoughCircles
+ It works in a very similar fashion to HoughLines
+ 
+ HoughCircles has a minimum distance between a circle's centers, as well as minimum and maximum values for a circle's radius
+ 
+    cv2.HoughCircle(image,cv2,Hough_Gradient,1,np.pi/180,20,minRadius=0,maxRadius=0)
+ 
+ 
