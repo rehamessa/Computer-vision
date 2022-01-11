@@ -172,9 +172,16 @@ represents line is discarded
 -center
 -axes is the half of  the size of the ellipse main axes
 -angle is the ellipse rotation angle in degrees
--rectangle thickness
 - color
 - thickness
 
       cv2.ellipse(img, center,axes, angle, startAngle, endAngle, color, thickness)
-                   
+#### text string
+-center
+-text string
+-fontScale
+-fontFace
+- color
+- thickness
+
+      cv2.putText(img, text, org, fontFace, fontScale, color, thickness)                  
