@@ -143,35 +143,35 @@ represents line is discarded
  
 ## Draw shape on Image
 #### line geometric
--pt1 is the First point
--pt2 is the Second point
--Line color
--Line thickness
+- pt1 is the First point
+- pt2 is the Second point
+- Line color
+- Line thickness
     
     cv2.line(img,pt1, pt2, color, thickness)
     cv2.line(img,(0,0), (255,255), (255,255,0), 3)
     cv2.arrowedline(img,(0,0), (255,255), (255,255,0), 3)
 #### rectangle geometric
--pt1 is the Vertex of the rectangle
--pt2 is the Vertex of the rectangle opposite to pt1
--rectangle color
--rectangle thickness
--Negative values
+- pt1 is the Vertex of the rectangle
+- pt2 is the Vertex of the rectangle opposite to pt1
+- rectangle color
+- rectangle thickness
+- Negative values
 
      cv2.rectangle(img, pt1, pt2, color, thickness)
      cv2.Rectangle(img,(0,0), (255,255), (255,255,0), 3)
 #### circle geometric
--center
--radius
+- center
+- radius
 - color
 - thicknes
 
       cv2.circle(img, center, radius, color, thickness)
       cv2.circle(img,(0,0), (255,255), (255,255,0), 3)
  #### ellipse geometric
--center
--axes is the half of  the size of the ellipse main axes
--angle is the ellipse rotation angle in degrees
+- center
+- axes is the half of  the size of the ellipse main axes
+- angle is the ellipse rotation angle in degrees
 - color
 - thickness
 
