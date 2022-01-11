@@ -177,10 +177,10 @@ represents line is discarded
 
       cv2.ellipse(img, center,axes, angle, startAngle, endAngle, color, thickness)
 #### text string
--center
--text string
--fontScale
--fontFace
+- center
+- text string
+- fontScale
+- fontFace
 - color
 - thickness
 
