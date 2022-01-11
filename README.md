@@ -96,4 +96,25 @@ For better accuracy , we use binary image for finding the contours so first we a
 binary image
 
       cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-      
+ ###### 2
+ apply threshold mentioned in the previous
+section to be able to detect corners by adding this code
+
+       ret , thresh = cv2.threshold(grayimage ,127,255,0)
+###### 3
+find out contours
+
+      cv2.findContours()
+###### 
+retrieve the entire hierarchy of external and internal contours
+       
+       cv2.RETR_TREE
+ ######
+ retrieve the most external contours
+ 
+       cv2.RETR_EXTERNAL
+back to the code sample, note that the findContours function returns two elements: the contours and their
+hierarchy. We use the contours to draw green outlines on the color version of the image
+       
+       contours , hierarchy = cv2. f indContours( thresh, cv2.RETR_TREE,
+cv2.CHAIN_APPROX_NONE)
