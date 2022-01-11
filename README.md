@@ -116,5 +116,5 @@ retrieve the entire hierarchy of external and internal contours
 back to the code sample, note that the findContours function returns two elements: the contours and their
 hierarchy. We use the contours to draw green outlines on the color version of the image
        
-       contours , hierarchy = cv2. f indContours( thresh, cv2.RETR_TREE,
+       contours , hierarchy = cv2. f indContours( thresh, cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
 cv2.CHAIN_APPROX_NONE)
